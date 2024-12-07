@@ -42,14 +42,14 @@ nav.navbar {
   padding: 0.5rem 1rem;
   transition: color 0.3s ease;
   font-weight: bolder;
-  font-family: "Nunito",sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 .navbarButtonContainer {
   display: flex;
   gap: 0.7rem;
 }
 .navbar-nav .nav-link:hover {
-  background: linear-gradient(to right,#ffff3d, #a4c020, #556110);
+  background: linear-gradient(to right, #ffff3d, #a4c020, #556110);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -63,14 +63,26 @@ nav.navbar {
 } */
 
 @keyframes bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-90px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-90px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 #navbar {
   animation: bounce 1s ease-in-out;
+  width: 15%;
+  transition: all 1s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#navbar.expand {
   width: 85%;
-  /* transition: all 1s; */
+  max-width: 1200px;
 }
 /* #navbar:hover{
   width: 85%;
@@ -78,8 +90,6 @@ nav.navbar {
 #navbarNav{
   display: none !important;
 } */
-
-
 
 /* "Get Started" Button Styling */
 .btn-get-started {
@@ -92,8 +102,12 @@ nav.navbar {
   border-radius: 20px;
   padding: 0.5rem 1.5rem;
   border: none !important;
-  transition: background-color 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out;
   text-decoration: none;
+  /* transition: transform 0.5s; */
+}
+.btn-get-started:hover {
+  transform: translateY(-5px);
 }
 
 .dropdown-menu {
