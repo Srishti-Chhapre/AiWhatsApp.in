@@ -53,14 +53,6 @@ nav.navbar {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/*navbar animation*/
-/* #navbar {
-  animation: bounce 1s ease-in-out;
-}
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-150px); }
-} */
 
 @keyframes bounce {
   0% {
@@ -84,12 +76,6 @@ nav.navbar {
   width: 85%;
   max-width: 1200px;
 }
-/* #navbar:hover{
-  width: 85%;
-}
-#navbarNav{
-  display: none !important;
-} */
 
 /* "Get Started" Button Styling */
 .btn-get-started {
@@ -104,7 +90,6 @@ nav.navbar {
   border: none !important;
   transition: transform 0.1s ease-in-out;
   text-decoration: none;
-  /* transition: transform 0.5s; */
 }
 .btn-get-started:hover {
   transform: translateY(-5px);

@@ -7,10 +7,6 @@ navbar.addEventListener("animationend", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector("#navbar");
   setTimeout(() => {
-    navbar.classList.add("show-logo");
-  }, 100);
-  // Expand navbar after 2 seconds
-  setTimeout(() => {
     navbar.classList.add("expand");
   }, 1000);
 });
